@@ -1,0 +1,277 @@
+h1, h2, h3, p, ul {
+ margin: 0;
+ padding: 0;
+}
+
+img {
+ display: block;
+ max-width: 100%;
+ height: auto;
+ margin: auto;
+}
+
+ul {
+ list-style-type: none;
+}
+
+/* end css reset */ 
+
+header {
+    background: linear-gradient(180deg, rgba(203, 152, 219, 1) 15%, rgba(217, 189, 226, 1) 55%, rgba(243, 227, 248, 1) 80%, rgba(255, 255, 255, 1) 100%);
+    display: flex;
+    flex-direction: column;
+
+}
+
+#mainheader h2 {
+    font-family: "Lateef";
+    font-size: 48px;
+    color: #AF6CC5; 
+    padding-top: 60px;
+}
+
+#mainheader h1 {
+    font-family: "DM Serif Text";
+    font-size: 64px;
+    color: white;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+img {
+    max-width: 75%;
+    margin: 36px auto;
+}
+
+a {
+    color: #AF6CC5; 
+}
+
+section {
+    max-width: 80%;
+    margin: auto;
+    padding: 48px;
+}
+
+#about p {
+    font-family: "Lateef";
+    font-size: 36px;
+    text-align: center;
+}
+
+#about span {
+    font-weight: bold;
+    color: #AF6CC5; 
+}
+
+hr {
+    max-width: 80%; 
+    border: 1px solid rgb(200, 200, 200); 
+    margin: 24px auto;
+}
+
+/* projects */
+
+#des112, #portalpage {
+    display: flex; 
+    flex-direction: column-reverse;
+}
+
+#des112 a, #teawebsite a, #portalpage a {
+    border: none; 
+    background-color: transparent;
+    display: block; 
+    margin: auto;
+}
+
+#des112 h3, #teawebsite h3, #portalpage h3 {
+    font-family: "DM Serif Text";
+    font-size: 36px;
+    text-align: center;
+    color: #AF6CC5; 
+}
+
+#des112 p, #teawebsite p, #portalpage p {
+    font-family: "Lateef";
+    font-size: 24px;
+    text-align: center;
+    padding: 12px;
+}
+
+/* footer */
+
+footer {
+    background-color: #CB98DB;
+    padding: 36px; 
+    text-align: center;
+}
+
+footer p, footer a{
+    font-family: "Afacad";
+    font-size: 20px;
+    color: white;
+}
+
+/* des112 page */
+header {
+    padding: 48px;
+}
+
+.logo a {
+    font-size: 36px;
+    color: white;
+}
+
+#pagemain {
+    max-width: 80%;
+    margin: auto;
+}
+
+#pagemain h1 {
+    font-family: "DM Serif Text";
+    font-family: 48px;
+    color: #AF6CC5; 
+    font-style: italic;    
+    padding: 12px;
+}
+
+#pagemain h2 {
+    font-family: "DM Serif Text";
+    font-size: 24px;
+    text-align: center;
+    color: #AF6CC5; 
+    padding-top: 12px;
+}
+
+#pagemain p {
+    font-family: "Lateef";
+    font-size: 20px;
+    line-height: 36px;
+    padding: 12px;
+}
+
+
+
+@media only screen and (min-width: 900px) {
+
+    #mainheader {
+        height: 100vh;
+        flex-direction: row;
+    }
+
+    #mainheader h2 {
+        font-size: 96px;
+        padding: 180px 0 0 120px;
+    }
+
+    #mainheader h1 {
+        font-size: 200px;
+        padding-left: 120px; 
+    }
+
+    h1, h2 {
+        text-align: left;
+    }
+
+    img {
+        width: 387px;
+        height: 393px;
+        align-self: center;
+    }
+
+    #about {
+        padding: 120 0 200 0;
+    }
+
+    section {
+        padding: 96px;
+    }
+
+    section div {
+        margin: auto 0;
+    }
+
+    #des112, #portalpage {
+        flex-direction: row;
+    }
+    
+    #teawebsite, #portalpage {
+        display: flex;
+    }
+
+    #teawebsite h3 {
+        padding: 12px;
+    }
+
+    #des112 div, #teawebsite div, #portalpage div {
+        width: 50%;
+    }
+
+    #des112 img, #portalpage img {
+        max-height: 50%;
+        width: 75%;
+        justify-content: right;
+        padding-right: 20px;
+    }
+
+    #teawebsite img {
+        max-height: 50%;
+        width: auto;
+        justify-content: left;
+    }
+
+    /* footer */ 
+    footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer p, footer a {
+    font-family: "Afacad";
+    font-size: 24px;
+    color: white;
+    }
+
+    /* DES 112 */
+    header .logo {
+        text-align: center;
+        padding: 12px 0 48px 0;
+    }
+
+    #pagemain {
+        max-width: 75%;
+        margin: auto;
+    }
+
+    #pagemain h1 {
+        font-size: 48px;
+    }
+
+    #pagemain h2 {
+        font-size: 36px;
+        text-align: left;
+        padding-left: 12px;
+    }
+
+    #pagemain p {
+        font-size: 24px;
+        line-height: 40px;
+    }
+
+    #pagemain img {
+        height: 100%;
+        width: 100%
+    }
+
+    #pagemain div {
+        display: flex;
+        gap: 24px;
+    }
+
+    #des112wireframes img {
+        border: 5px solid #AF6CC5; 
+        border-radius: 15px;
+    }
+}
