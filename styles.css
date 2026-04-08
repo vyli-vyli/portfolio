@@ -157,6 +157,10 @@ footer p, footer a{
     border-radius: 15px;
 }
 
+#logo img {
+    border: none;
+}
+
 /* tea page */
 #teapagemain img, #portalpagemain img {
     max-height: 75%;
